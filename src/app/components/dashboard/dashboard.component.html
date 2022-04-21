@@ -1,0 +1,8 @@
+<h2>Main Courses</h2>
+<div class="course-menu">
+  <a *ngFor="let course of courses"
+    routerLink="/detail/{{course.id}}">
+    <img [src]="course.imgUrl" alt="{{course.name}}" >
+    <p>{{course.name}}</p>
+  </a>
+</div>

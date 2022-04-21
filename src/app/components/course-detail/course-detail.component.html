@@ -1,0 +1,30 @@
+<div *ngIf="course" >
+  <div ngClass="detail">
+    <h2>{{ course.name }} Details</h2>
+    <!-- <div><span>id: </span>{{ course.id }}</div> -->
+    <div><span>name: </span>{{ course.name }}</div>
+    <div><span>time: </span>{{ course.time }}</div>
+  </div>
+
+  <div ngClass="setting">
+    <h3>Setting Course Details</h3>
+  <div ngClass="set-name">
+    <label for="course-name">Course name: </label>
+    <input
+      id="course-name"
+      [(ngModel)]="course.name"
+      placeholder="Course name"
+    />
+  </div>
+  <div ngClass="set-time">
+    <label for="course-time">Course time: </label>
+    <input
+      id="course-time"
+      [(ngModel)]="course.time"
+      placeholder="Course time"
+    />
+  </div>
+</div>
+  
+</div>
+<div ngClass="button" (click)="goback()">Go Back</div>

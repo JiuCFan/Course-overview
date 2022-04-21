@@ -1,0 +1,9 @@
+<h2>My Courses</h2>
+<ul class="course">
+  <li *ngFor="let course of courses">
+    <a routerLink="/detail/{{ course.id }}">
+      <span class="badge">{{ course.id }}</span>
+      <span>{{ course.name }}</span>
+    </a>
+  </li>
+</ul>
